@@ -79,12 +79,15 @@ body {
     background-position: center;
 }
 
+
 .hero__texts {
     color: #fff;
     width: 90%;
     margin: 0 auto;
     padding: 80px 0;
     text-align: center;
+    height: 450px;
+
 }
 
 .title {
@@ -110,6 +113,7 @@ body {
 
 .different {
     text-align: center;
+    
 }
 
 .title__different {
@@ -168,9 +172,30 @@ body {
 .find__container {
     background-color: var(--dark-violet);
     color: #fff;
+    position: relative;
     text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    
     
 }
+
+
+.find__container::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-size: cover;
+    background-position: left;
+}
+
+
+
 
 .footer {
     background-color: var(--very-light-gray);
@@ -349,7 +374,6 @@ body {
 
     
     .footer__brand {
-        
         flex-direction: row;
         justify-content: space-between;
         
@@ -368,9 +392,5 @@ body {
         align-items: flex-start;
     }
     
-
-
-
-
     
 }
